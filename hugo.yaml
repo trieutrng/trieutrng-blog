@@ -17,7 +17,7 @@ menu:
       url: ""
       weight: 1
     - name: Posts
-      url: "posts/"
+      url: "post/"
       weight: 2
     - name: Categories
       url: "categories/"
