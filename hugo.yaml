@@ -1,4 +1,4 @@
-baseurl: "https://trieutrng.github.io/"
+baseurl: "https://trieutrng.github.io/"  # please update this to your actual URL
 languageCode: "en-us"
 title: "Trieu Truong"
 theme: "yihui-xmin"
@@ -16,12 +16,12 @@ menu:
     - name: Home
       url: ""
       weight: 1
-    - name: Posts
+    - name: Post
       url: "posts/"
       weight: 2
     - name: Categories
       url: "categories/"
-      weight: 5
+      weight: 3
     - name: Tags
       url: "tags/"
       weight: 4
