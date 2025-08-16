@@ -1,11 +1,15 @@
 #!/bin/sh
 
 echo "building..."
+echo ""
 hugo
 
 # ---
 
+echo ""
 echo "deploying..."
+echo ""
+
 cd public
 
 now=$(date +"%Y-%m-%d %H:%M:%S")
@@ -18,7 +22,9 @@ git push -u origin main
 # ---
 cd ..
 
+echo ""
 echo "committing..."
+echo ""
 
 git add .
 git commit -m "$message"
