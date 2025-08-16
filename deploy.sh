@@ -13,7 +13,7 @@ echo ""
 cd public
 
 now=$(date +"%Y-%m-%d %H:%M:%S")
-message="Deploy site changed - $today"
+message="Deploy site changed - $now"
 
 git add .
 git commit -m "$message"
