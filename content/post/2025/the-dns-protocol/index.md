@@ -36,7 +36,7 @@ First of all, the the packet begins with a header section, this one describes th
 
 Next, we have the question section, this bunch of bytes store the question of the request which is domain name to resolve.
 
-The answer bytes hold the tail of the question section, it is built for the response no matter the response belongs to the TLD server or Authoritative one.
+The answer bytes holds the tail of the question section, it is built for the response no matter the response belongs to the TLD server or Authoritative one.
 
 For simplicity, the last 2 sections are Authority and Additional will be skipped for this post.
 
@@ -88,7 +88,7 @@ int build_dns_packet(struct Query *query, char *packet) {
 }
 ```
 
-# DNS questions
+# DNS question
 ![DNS packet questions](dns-question.png)
 
 3 fields are described as:
@@ -180,6 +180,10 @@ A DNS response is sometimes required to repeat the same name multiple times. In 
 
 A pointer is indicated by a 16-bit value with the two most significant bits set. The lower 14 bits indicate the pointer value. This 14-bit value specifies the location of the name as an offset from the beginning of the message.
 
+# The protocol
+By default, DNS uses UDP as default protocol and and DNS query or response should fit well inside one packet. However, if a DNS reponse indicate that the message is truncated, the TCP comes and shines, in this case, we fallback to query DNS with the same message format as we do with UDP.
 
 # The end
+![DNS usage 1](dns-usage-1.png)
+
 The implementation is at https://github.com/trieutrng/dns-protocol
