@@ -2,7 +2,7 @@
 {{ .Content }}
     {{ $notes := first 5 (where .Site.RegularPages "Type" "notes") }}
     {{ if gt (len $notes) 0 }}
-        <h2>Recent Notes</h2>
+        <h3>Recent Notes</h3>
         <ul>
         {{ range $notes }}
             <li>
