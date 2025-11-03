@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{ .Content }}
+    <h2>Latest Posts</h2>
+    <ul>
+      {{ range first 5 (where .Site.RegularPages "Type" "blog") }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <small>{{ .Date.Format "Jan 2, 2006" }}</small>
+        </li>
+      {{ end }}
+    </ul>
+{{ end }}

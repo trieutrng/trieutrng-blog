@@ -24,10 +24,6 @@ enableRobotsTXT = true
   # The path to your favicon
   favicon = "images/favicon.png"
 
-  [params.permalinks]
-    note = "/note/:year/:month/:day/:slug/"
-    post = "/post/:year/:month/:day/:slug/"
-
   # These images will show up when services want to generate a preview of a link
   # to your site. Ignored if `generateSocialCard = true`. For more information
   # about previews, see https://gohugo.io/templates/internal#twitter-cards and
@@ -62,5 +58,9 @@ enableRobotsTXT = true
     weight = 10
   [[menus.main]]
     name = 'Notes'
-    pageRef = '/note'
+    pageRef = '/notes'
     weight = 20
+
+[permalinks]
+  note = "/note/:year/:month/:day/:slug/"
+  post = "/post/:year/:month/:day/:slug/"
