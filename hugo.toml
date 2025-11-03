@@ -1,4 +1,5 @@
 # Basic config
+name = "Trieu Truong"
 baseURL = "https://trieutrng.github.io/"
 theme = "hugo-bearcub"
 
