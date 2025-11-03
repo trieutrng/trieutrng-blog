@@ -54,3 +54,13 @@ enableRobotsTXT = true
   [params.author]
     name = "Trieu Truong" # Your name as shown in the RSS feed metadata
     email = "trieutrng@gmail.com" # Added to the footer so readers can reply to posts
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+  [[menus.main]]
+    name = 'Notes'
+    pageRef = '/note'
+    weight = 20
