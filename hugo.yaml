@@ -1,7 +1,7 @@
 baseurl: "https://trieutrng.github.io/"  # please update this to your actual URL
 languageCode: "en-us"
 title: "Trieu Truong"
-theme: "yihui-xmin"
+theme: "hugo-bearcub"
 googleAnalytics: ""
 disqusShortname: ""
 ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
