@@ -20,7 +20,7 @@ enableRobotsTXT = true
 
 [params]
   # The description of your website
-  description = "Bear Cub Demo"
+  description = "Trieu Truong Notebook"
 
   # The path to your favicon
   favicon = "images/favicon.png"
@@ -33,7 +33,7 @@ enableRobotsTXT = true
 
   # This title is used as the site_name on the Hugo's internal opengraph
   # structured data template
-  title = "Bear Cub"
+  title = "Trieu Truong"
 
   # Dates are displayed following the format below. For more information about
   # formatting, see https://gohugo.io/functions/format/
