@@ -1,21 +1,15 @@
 {{ define "main" }}
 {{ .Content }}
-<ul>
-    {{ range first 5 (where .Site.RegularPages "Type" "notes") }}
-      <li>
-        <span>
-            <i>
-            <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
-                {{ .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}
-            </time>
-            </i>
-        </span>
-        {{ if .Params.link }}
-            <a href="{{ .Params.link }}" target="_blank">{{ .Title }} ↪</a>
-        {{ else }}
+    {{ $posts := first 5 (where .Site.RegularPages "Type" "post") }}
+    {{ if gt (len $posts) 0 }}
+        <h2>Recent Posts</h2>
+        <ul>
+        {{ range $posts }}
+            <li>
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <small>{{ .Date.Format "Jan 2, 2006" }}</small>
+            </li>
         {{ end }}
-        </li>
+        </ul>
     {{ end }}
-  </ul>
 {{ end }}
