@@ -6,8 +6,8 @@
         <ul>
         {{ range $notes }}
             <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             <small>{{ .Date.Format "Jan 2, 2006" }}</small>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             </li>
         {{ end }}
         </ul>
