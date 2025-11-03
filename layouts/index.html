@@ -1,10 +1,10 @@
 {{ define "main" }}
 {{ .Content }}
-    {{ $posts := first 5 (where .Site.RegularPages "Type" "post") }}
-    {{ if gt (len $posts) 0 }}
-        <h2>Recent Posts</h2>
+    {{ $notes := first 5 (where .Site.RegularPages "Type" "notes") }}
+    {{ if gt (len $notes) 0 }}
+        <h2>Recent Notes</h2>
         <ul>
-        {{ range $posts }}
+        {{ range $notes }}
             <li>
             <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             <small>{{ .Date.Format "Jan 2, 2006" }}</small>
