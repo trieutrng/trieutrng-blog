@@ -62,5 +62,4 @@ enableRobotsTXT = true
     weight = 20
 
 [permalinks]
-  note = "/note/:year/:month/:day/:slug/"
-  post = "/post/:year/:month/:day/:slug/"
+  note = "/notes/:year/:month/:day/:slug/"
