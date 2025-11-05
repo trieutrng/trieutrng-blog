@@ -1,6 +1,6 @@
 ---
 title: A little about TLS
-date: '2025-11-17'
+date: '2025-11-06'
 draft: False
 categories:
   - programming
